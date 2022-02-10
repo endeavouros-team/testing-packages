@@ -1,5 +1,5 @@
 # Original Maintainer: Portergos Linux <portergoslinux@gmail.com>
-# Maintainers : EndeavourOS <info@endeavouros.com>, joekamprad <joekamprad@endeavouros.com>
+# Maintainer : EndeavourOS <info@endeavouros.com>
 # Calamares installer configured for EndeavourOS
 
 pkgname=calamares_current
