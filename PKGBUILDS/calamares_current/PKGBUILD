@@ -1,6 +1,10 @@
 # Original Maintainer: Portergos Linux <portergoslinux@gmail.com>
 # Maintainer : EndeavourOS <info@endeavouros.com>
 # Calamares installer configured for EndeavourOS
+#
+# Configurations are in extra packages: 
+# calamares_config_default - default settings
+# calamares_config_ce - Community Edition settings
 
 pkgname=calamares_current
 _eos_changes=EndeavourOS-calamares
