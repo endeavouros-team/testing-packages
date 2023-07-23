@@ -78,9 +78,9 @@ export WELCOME_ICON_SYSTEM_LOGS=search                               # face-worr
 export WELCOME_ICON_LEAVE=stop                                       # face-crying
 export WELCOME_ICON_HONEST=face-angel
 
-export WELCOME_ICON_INSTALL_TAB=system-software-install              # $(eos_IconGrasp system-software-install)
-export WELCOME_ICON_PARTITION_MANAGER=drive-harddisk                        # $(eos_IconGrasp gparted)
-export WELCOME_ICON_BLUETOOTH=bluetooth                              # $(eos_IconGrasp bluetooth)
+export WELCOME_ICON_INSTALL_TAB=system-software-update              # $(eos_IconGrasp system-software-install)
+export WELCOME_ICON_PARTITION_MANAGER=partitionmanager                        # $(eos_IconGrasp gparted)
+export WELCOME_ICON_BLUETOOTH=/usr/share/icons/breeze/preferences/32/preferences-system-bluetooth.svg                            # $(eos_IconGrasp bluetooth)
 export WELCOME_ICON_TOGGLE_r8169_DRIVER=network-wired       # $(eos_IconGrasp system-software-update)
 
 export WELCOME_ICON_CHANGE_RESOLUTION=video-display
@@ -88,18 +88,18 @@ export WELCOME_ICON_CHANGE_DISPLAY_MANAGER=video-display
 export WELCOME_ICON_INSTALL_OFFICIAL=calamares
 export WELCOME_ICON_INSTALL_COMMUNITY=calamares
 export WELCOME_ICON_INSTALL_INFO=$WELCOME_ICON_INSTALL_TAB
-export WELCOME_ICON_MIRROR_UPDATE=software-update-available                 # or applications-internet ?
+export WELCOME_ICON_MIRROR_UPDATE=system-software-update                 # or applications-internet ?
 export WELCOME_ICON_BLUETOOTH_INFO=$WELCOME_ICON_BLUETOOTH
-export WELCOME_ICON_LATEST_RELEASE=dialog-information                                # or info ?
-export WELCOME_ICON_INSTALLATION_TIPS=dialog-information
-export WELCOME_ICON_SYSTEM_RESCUE=dialog-information
-export WELCOME_ICON_SYSTEM_LOGS_HOWTO=dialog-information
-export WELCOME_ICON_WEBSITE=dialog-information                                      # or info ?
-export WELCOME_ICON_WIKI=dialog-information
-export WELCOME_ICON_NEWS=dialog-information
-export WELCOME_ICON_FORUM=dialog-information
-export WELCOME_ICON_DONATE=dialog-information
-export WELCOME_ICON_ABOUT_WELCOME=dialog-information
+export WELCOME_ICON_LATEST_RELEASE=data-information                                # or info ?
+export WELCOME_ICON_INSTALLATION_TIPS=data-information
+export WELCOME_ICON_SYSTEM_RESCUE=data-information
+export WELCOME_ICON_SYSTEM_LOGS_HOWTO=data-information
+export WELCOME_ICON_WEBSITE=data-information                                      # or info ?
+export WELCOME_ICON_WIKI=data-information
+export WELCOME_ICON_NEWS=data-information
+export WELCOME_ICON_FORUM=data-information
+export WELCOME_ICON_DONATE=data-information
+export WELCOME_ICON_ABOUT_WELCOME=data-information
 export WELCOME_ICON_SYSTEM_UPDATE=system-software-update
 export WELCOME_ICON_PACCACHE_SRV=applications-system
 export WELCOME_ICON_UPDATE_NOTIFIER_CONF=preferences-system
@@ -110,11 +110,11 @@ export WELCOME_ICON_XFCE_THEME_VANILLA=preferences-desktop-theme
 export WELCOME_ICON_XFCE_THEME_EOS=preferences-desktop-theme
 export WELCOME_ICON_INITIAL_TAB=preferences-system
 export WELCOME_ICON_EOS_GENERIC=endeavouros-icon
-export WELCOME_ICON_TIPS=dialog-information
+export WELCOME_ICON_TIPS=data-information
 export WELCOME_ICON_ARM=system-run
 export WELCOME_ICON_RUNINTERMINAL=preferences-system
 export WELCOME_ICON_QUESTION=dialog-question
-export WELCOME_ICON_INFO=dialog-information
+export WELCOME_ICON_INFO=data-information
 export WELCOME_ICON_PREFERENCES=preferences-system                          # was: system-preferences
 export WELCOME_ICON_OWN_COMMANDS=applications-other
 export WELCOME_ICON_HELP=help-about
@@ -640,7 +640,7 @@ eos_yad_nothing_todo() {
 
     [ -n "$timeout" ] || timeout=10
     [ -n "$title" ]   || title="Info"
-    [ -n "$image" ]   || image=info
+    [ -n "$image" ]   || image=data-information
 
     local cmd=(
         eos_yad --form --text="$text" --title="$title" --no-focus --image="$image"
